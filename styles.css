@@ -5,6 +5,7 @@
 body {
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 .header {
@@ -14,7 +15,7 @@ body {
     font-weight: 800;
     display: flex;
     justify-content: space-between;
-    padding: 8px 96px;
+    padding: 8px 172px;
 }
 
 ul {
@@ -35,6 +36,17 @@ a {
 .hero {
     background-color: #1F2937;
     color: #E5E7EB;
+    padding: 64px 172px;
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+}
+
+.hero .text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .hero-title {
@@ -47,11 +59,59 @@ a {
     background-color: #3882F6;
     border: 0;
     color: #F9FAF8;
+    align-self: flex-start;
+    border-radius: 4px;
+    width: 125px;
+    height: 50px;
 }
 
 .image-placeholder {
     background-color: gray;
     color: #F9FAF8;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px;
+}
+
+.info .title {
+    font-weight: 800;
+    font-size: 32px;
+    color: #1F2937;
+}
+
+.info .groups {
+    display: flex;
+    margin: 32px;
+    gap: 16px;
+}
+
+.info .group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px
+}
+
+.info-picture {
+    border-radius: 16px;
+    border-color: #3882F6;
+    border-width: 4px;
+    border-style: solid;
+    width: 172px;
+    height: 172px;
+}
+
+.info-text {
+    max-width: 200px;
+    text-align: center;
 }
 
 .quote {
@@ -59,23 +119,54 @@ a {
     font-size: 36px;
     font-style: italic;
     font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 128px 256px;
 }
 
 .quote span {
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
+    align-self: flex-end;
 }
 
 .call-to-action {
     background-color: #3882F6;
+    margin: 64px 128px;
+    border-radius: 8px;
+    padding: 48px 128px;
+    display: flex;
+    color: #F9FAF8;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .call-to-action button {
     background-color: #3882F6;
+    border-radius: 8px;
+    border-color: #F9FAF8;
+    border-width: 2px;
+    border-style: solid;
+    font-size: 16px;
+    font-weight: 700;
+    color: #F9FAF8;
+    width: 125px;
+    height: 40px;
+
+}
+
+.call-to-action .title {
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .footer {
     background-color: #1F2937;
     color: #E5E7EB;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
